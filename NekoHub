@@ -476,6 +476,7 @@ local a = {
             end
         end)
         repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
     end,
     ['dirty'] = function(c)
         spawn(function()
@@ -484,10 +485,11 @@ local a = {
                 ReplicatedStorage:FindFirstChild("HousingAPI/ActivateFurniture",true):InvokeServer(Player, Showers(), 'UseBlock', {['cframe'] = Player.Character.HumanoidRootPart.CFrame}, C)
                 if not Showers() then
                     GoToHome()
-                end
+               end
             end
         end)
         repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
         end,
     ["hungry"] = function(c)
         ReplicatedStorage:FindFirstChild("ShopAPI/BuyItem",true):InvokeServer('food', 'pizza', {})
@@ -536,33 +538,40 @@ local a = {
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7986, 2023, -8017)
         GoToStore('Nursery')
         repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
     end,
     ["school"] = function(c)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7986, 2023, -8017)
         GoToStore('School')
         repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
     end,
     ["pizza_party"] = function(c)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7986, 2023, -8017)
         GoToStore("PizzaShop")
         repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
     end,
     ["salon"] = function(c)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7986, 2023, -8017)
         GoToStore("Salon")
         repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
     end,
     ["beach_party"] = function(c)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-670, 38, -1413)
         repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
     end,
     ["camping"] = function(c)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-24, 38, -1054)
         repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
     end,
     ['bored'] = function(c)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-387, 38, -1750)
         repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
     end
 }
 
@@ -685,14 +694,6 @@ game:GetService("ReplicatedStorage").API:FindFirstChild("TeamAPI/ChooseTeam"):In
                 end)
             end
         end)
-        spawn(function()
-            while wait(20) and PetFarm and Refresh do
-                pcall(function()
-                    ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
-                    Pet = ReplicatedStorage.API["ToolAPI/Equip"]:InvokeServer(PetID)
-                end)
-            end
-        end)
         if Key ~= nil then
             PetID = Key.unique
             ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
@@ -718,9 +719,6 @@ game:GetService("ReplicatedStorage").API:FindFirstChild("TeamAPI/ChooseTeam"):In
                         Pet, C = ReplicatedStorage.API["ToolAPI/Equip"]:InvokeServer(PetID)
                     end
                 end)
-            end
-            while wait(30) and PetFarm do
-            Pet, C = ReplicatedStorage.API["ToolAPI/Equip"]:InvokeServer(PetID)
             end
         end)
     end)
