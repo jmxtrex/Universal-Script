@@ -470,7 +470,6 @@ local a = {
                     print(Player, Bed(), 'UseBlock', {['cframe'] = Player.Character.HumanoidRootPart.CFrame}, C)
                     ReplicatedStorage:FindFirstChild('HousingAPI/ActivateFurniture',true):InvokeServer(Player, Bed(), 'UseBlock', {['cframe'] = Player.Character.HumanoidRootPart.CFrame}, C)
                     if not Bed() then
-                        GoToMainMap()
                         GoToHome()
                     end
                 end
@@ -484,7 +483,6 @@ local a = {
                 print(Player, Bed(), 'UseBlock', {['cframe'] = Player.Character.HumanoidRootPart.CFrame}, C)
                 ReplicatedStorage:FindFirstChild("HousingAPI/ActivateFurniture",true):InvokeServer(Player, Showers(), 'UseBlock', {['cframe'] = Player.Character.HumanoidRootPart.CFrame}, C)
                 if not Showers() then
-                    GoToMainMap()
                     GoToHome()
                 end
             end
@@ -687,6 +685,14 @@ game:GetService("ReplicatedStorage").API:FindFirstChild("TeamAPI/ChooseTeam"):In
                 end)
             end
         end)
+        spawn(function()
+            while wait(20) and PetFarm and Refresh do
+                pcall(function()
+                    ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
+                    Pet = ReplicatedStorage.API["ToolAPI/Equip"]:InvokeServer(PetID)
+                end)
+            end
+        end)
         if Key ~= nil then
             PetID = Key.unique
             ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
@@ -702,10 +708,18 @@ game:GetService("ReplicatedStorage").API:FindFirstChild("TeamAPI/ChooseTeam"):In
                             a[Name](Ailment)
                         end
                     end
+                    if Pet and C then
+                        if C.Parent ~= Workspace.Pets then
+                            ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
+                            Pet, C = ReplicatedStorage.API["ToolAPI/Equip"]:InvokeServer(PetID)
+                        end
+                    else
+                        ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
+                        Pet, C = ReplicatedStorage.API["ToolAPI/Equip"]:InvokeServer(PetID)
+                    end
                 end)
             end
-            while wait(20) and PetFarm do
-            ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
+            while wait(30) and PetFarm do
             Pet, C = ReplicatedStorage.API["ToolAPI/Equip"]:InvokeServer(PetID)
             end
         end)
