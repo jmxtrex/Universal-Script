@@ -475,7 +475,7 @@ local a = {
                 end
             end
         end)
-        repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        repeat wait(0) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
         ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
     end,
     ['dirty'] = function(c)
@@ -488,7 +488,7 @@ local a = {
                end
             end
         end)
-        repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        repeat wait() until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
         ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
         end,
     ["hungry"] = function(c)
@@ -510,7 +510,7 @@ local a = {
         wait(2)
         ReplicatedStorage:FindFirstChild("PetObjectAPI/CreatePetObject",true):InvokeServer("__Enum_PetObjectCreatorType_2", {["unique_id"] = Pizza})
         ReplicatedStorage:FindFirstChild("PetAPI/ConsumeFoodItem",true):FireServer(Pizza)
-        repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        repeat wait() until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
     end,
     ["thirsty"] = function(c)
         ReplicatedStorage:FindFirstChild("ShopAPI/BuyItem",true):InvokeServer('food', 'tea', {})
@@ -529,48 +529,48 @@ local a = {
         print(Tea)
         ReplicatedStorage:FindFirstChild("PetObjectAPI/CreatePetObject",true):InvokeServer("__Enum_PetObjectCreatorType_2", {["unique_id"] = Tea})
         ReplicatedStorage:FindFirstChild("PetAPI/ConsumeFoodItem",true):FireServer(Tea)
-        repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        repeat wait() until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
     end,
     ["sick"] = function(c)
-        repeat wait(0.30) ReplicatedStorage:FindFirstChild("MonitorAPI/HealWithDoctor",true):FireServer() until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        repeat wait(0) ReplicatedStorage:FindFirstChild("MonitorAPI/HealWithDoctor",true):FireServer() until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
     end,
     ["adoption_party"] = function(c)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7986, 2023, -8017)
         GoToStore('Nursery')
-        repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        repeat wait() until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
         ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
     end,
     ["school"] = function(c)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7986, 2023, -8017)
         GoToStore('School')
-        repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        repeat wait() until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
         ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
     end,
     ["pizza_party"] = function(c)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7986, 2023, -8017)
         GoToStore("PizzaShop")
-        repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        repeat wait() until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
         ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
     end,
     ["salon"] = function(c)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7986, 2023, -8017)
         GoToStore("Salon")
-        repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        repeat wait() until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
         ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
     end,
     ["beach_party"] = function(c)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-670, 38, -1413)
-        repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        repeat wait() until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
         ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
     end,
     ["camping"] = function(c)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-24, 38, -1054)
-        repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        repeat wait() until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
         ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
     end,
     ['bored'] = function(c)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-387, 38, -1750)
-        repeat wait(0.30) until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
+        repeat wait() until c.Parent ~= Player.PlayerGui.AilmentsMonitorApp.Ailments
         ReplicatedStorage.API["ToolAPI/Unequip"]:InvokeServer(PetID)
     end
 }
