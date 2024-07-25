@@ -1,0 +1,293 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/jmxtrex/Universal-Script/main/Global"))()
+
+VG.DisableConnection(Error)
+VG.DisableConnection(Idled)
+repeat wait() until Player.PlayerGui:FindFirstChild("PlayButton",true)
+RunService.Stepped:Connect(function()
+    pcall(function()
+        if Player.PlayerGui:FindFirstChild("NewsApp",true).Enabled then
+            for i,v in pairs(getconnections(Player.PlayerGui:FindFirstChild("PlayButton",true).MouseButton1Click)) do
+                v:Fire()
+            end
+        end
+        if Player.PlayerGui:FindFirstChild("ChooseParent",true) then
+            for i,v in pairs(getconnections(Player.PlayerGui:FindFirstChild("ChooseParent",true).MouseButton1Click)) do
+                v:Fire()
+            end
+        end
+        if Workspace:FindFirstChild("ServerSidedMapSeats") then
+            Workspace.ServerSidedMapSeats:Destroy()
+        end
+    end)
+end)
+
+local Table = {6152116144, 185655149}
+local Set = setfpscap
+local getupvalue = getupvalue or debug.getupvalue
+local getconstant = getconstant or debug.getconstant
+local getconstants = getconstants or debug.getconstants
+local getgc = getgc or get_gc_objects or debug.getgc
+local getreg = getreg or getregistry or debug.getregistry
+local get_thread_context = get_thread_context or getthreadcontext or getidentity or syn.get_thread_identity
+local get_thread_identity = get_thread_context
+local set_thread_context = set_thread_context or setthreadcontext or setidentity or syn.set_thread_identity
+local set_thread_identity = set_thread_context
+local Remotes = {}
+local Inventorys = ReplicatedStorage.ClientDB.Inventory
+local Count = 0
+
+local AilmentFurnitues = {}
+local Spec = {}
+local Key = {}
+local JoJo = {}
+local GGO = {}
+local Ps = {}
+local Neons = {}
+local AilmentFurnitues = {}
+local Neon = {}
+local Spec = {}
+local Key = {}
+local PetID
+local Pet
+local PetsShow = {}
+local List = {}
+local JoJo = {}
+local GGO = {}
+local Ps = {}
+for i,v in next, Players:GetPlayers() do
+    table.insert(Ps, v.Name)
+end
+for i, v in pairs(require(ReplicatedStorage.ClientModules.Core.ClientData).get_data()[Player.Name].inventory.pets) do
+    local key = tostring(v["id"]) .. " - " .. tostring(v["properties"]["age"]) .. " years old"
+    if not table.find(List, Key) and v.kind ~= "practice_dog" then
+        PetsShow[key] = v
+        table.insert(List, key)
+        table.sort(List)
+    end
+end
+for i, v in pairs(require(ReplicatedStorage.ClientModules.Core.ClientData).get_data()[Player.Name].inventory.pets) do
+    if not table.find(JoJo,tostring(v["id"])) and v.kind ~= "practice_dog" then
+        local Key2 = tostring(v["id"])
+        GGO[Key2] = v
+        table.insert(JoJo,Key2)
+        table.sort(JoJo)
+    end
+end
+
+UserInputService.WindowFocusReleased:Connect(function()
+    if Render then
+        RunService:Set3dRenderingEnabled(false)
+        if table.find(Table, game.PlaceId) then
+            Set(30)
+        else
+            Set(15)
+        end
+    end
+end)
+UserInputService.WindowFocused:Connect(function()
+    if Render then
+        RunService:Set3dRenderingEnabled(true)
+        Set(100)
+    end
+end)
+
+for i, v in pairs(getupvalue(require(ReplicatedStorage.Fsys).load("RouterClient").init, 4)) do
+    v.Name = i
+end
+pcall(function()
+    ReplicatedStorage.API:FindFirstChild("DailyLoginAPI/ClaimDailyReward"):InvokeServer()
+end)
+
+UserInputService.WindowFocusReleased:Connect(function()
+    if Render then
+        RunService:Set3dRenderingEnabled(false)
+        if table.find(Table, game.PlaceId) then
+            Set(30)
+        else
+            Set(15)
+        end
+    end
+end)
+
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+
+local Window = Fluent:CreateWindow({
+    Title = "NekoHub: Game " .. MarketplaceService:GetProductInfo(game.PlaceId).Name,
+    SubTitle = "by KPOBEP",
+    TabWidth = 160,
+    Size = UDim2.fromOffset(480, 550),
+    Acrylic = false, -- The blur may be detectable, setting this to false disables blur entirely
+    Theme = "Darker",
+    MinimizeKey = Enum.KeyCode.Delete -- Used when theres no MinimizeKeybind
+})
+
+local Tabs = {
+    Teleport1 = Window:AddTab({ Title = "Teleport1", Icon = "" })
+}
+
+Tabs.Teleport1:AddButton({Title = "TP1", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+Tabs.Teleport1:AddButton({Title = "TP2", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+Tabs.Teleport1:AddButton({Title = "TP3", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+Tabs.Teleport1:AddButton({Title = "TP4", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+Tabs.Teleport1:AddButton({Title = "TP5", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+Tabs.Teleport1:AddButton({Title = "TP6", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+Tabs.Teleport1:AddButton({Title = "TP7", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+Tabs.Teleport1:AddButton({Title = "TP8", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+Tabs.Teleport1:AddButton({Title = "TP9", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+Tabs.Teleport1:AddButton({Title = "TP10", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+local Tabs = {
+    Teleport2 = Window:AddTab({ Title = "Teleport2", Icon = "" })
+}
+
+Tabs.Teleport2:AddButton({Title = "TP11", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+Tabs.Teleport2:AddButton({Title = "TP12", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+Tabs.Teleport2:AddButton({Title = "TP13", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+Tabs.Teleport2:AddButton({Title = "TP14", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+Tabs.Teleport2:AddButton({Title = "TP15", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+Tabs.Teleport2:AddButton({Title = "TP16", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+Tabs.Teleport2:AddButton({Title = "TP17", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+Tabs.Teleport2:AddButton({Title = "TP18", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+Tabs.Teleport2:AddButton({Title = "TP19", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+Tabs.Teleport2:AddButton({Title = "TP20", Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end})
+
+local Tabs = {
+    Main = Window:AddTab({ Title = "Farm", Icon = "" }),
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+}
+
+local Options = Fluent.Options
+
+do
+    Fluent:Notify({
+        Title = "NekoHub Loaded",
+        Content = "Congrats your using NekoHub " .. Verison,
+        SubContent = "", -- Optional
+        Duration = 10 -- Set to nil to make the notification not disappear
+    })
+
+    local Toggle = Tabs.Main:AddToggle("no", {Title = "Baby Farm", Default = false})
+    Toggle:OnChanged(function()
+        BabyFarm = Options.no.Value
+        spawn(function()
+            if BabyFarm then
+
+                local args = {
+    [1] = "Babies",
+    [2] = {
+        ["dont_send_back_home"] = true,
+        ["source_for_logging"] = "avatar_editor"
+    }
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("TeamAPI/ChooseTeam"):InvokeServer(unpack(args))
+            end 
+            if not BabyFarm then 
+                ReplicatedStorage.API["TeamAPI/ChooseTeam"]:InvokeServer("Parents", true)
+            end 
+        end)
+        spawn(function()
+            while wait(1) and BabyFarm do 
+                pcall(function()
+                    for i,v in pairs(Player.PlayerGui.AilmentsMonitorApp.Ailments:GetChildren()) do
+                        if v:IsA("Frame") then
+                            wait(.1)
+                            ReplicatedStorage.API["MonitorAPI/AddAdditive"]:FireServer(v.Name, math.random(1,100))
+                        end
+                    end 
+                end)
+            end 
+        end)
+    end)
+    Tabs.Main:AddButton({Title = "Grab Trading Linence",Description = "Grabs Trading Linence",Callback = function()
+        ReplicatedStorage.API:FindFirstChild("TradeAPI/BeginQuiz"):FireServer()
+        for i,v in pairs(getgc(true)) do
+            if type(v) == "table" and rawget(v,"question_index") then
+                for i,v in pairs(v.quiz) do
+                    ReplicatedStorage.API:FindFirstChild("TradeAPI/AnswerQuizQuestion"):FireServer(v.answer)
+                end 
+            end 
+        end 
+    end})
+
+end
+SaveManager:SetLibrary(Fluent)
+InterfaceManager:SetLibrary(Fluent)
+SaveManager:IgnoreThemeSettings()
+SaveManager:SetIgnoreIndexes({})
+InterfaceManager:SetFolder("FluentScriptHub")
+SaveManager:SetFolder("FluentScriptHub/specific-game")
+
+InterfaceManager:BuildInterfaceSection(Tabs.Settings)
+SaveManager:BuildConfigSection(Tabs.Settings)
+
+
+Window:SelectTab(1)
+
+Fluent:Notify({
+    Title = "NekoHub",
+    Content = "The script has been loaded.",
+    Duration = 8
+})
+
+SaveManager:LoadAutoloadConfig()
