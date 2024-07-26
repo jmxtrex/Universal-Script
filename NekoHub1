@@ -117,102 +117,301 @@ local Window = Fluent:CreateWindow({
     Title = "NekoHub: Game " .. MarketplaceService:GetProductInfo(game.PlaceId).Name,
     SubTitle = "by KPOBEP",
     TabWidth = 160,
-    Size = UDim2.fromOffset(480, 550),
+    Size = UDim2.fromOffset(480, 360),
     Acrylic = false, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Darker",
     MinimizeKey = Enum.KeyCode.Delete -- Used when theres no MinimizeKeybind
 })
 
 local Tabs = {
-    Teleport1 = Window:AddTab({ Title = "Teleport1", Icon = "" })
+    Farm = Window:AddTab({ Title = "Farm", Icon = "" })
 }
 
-Tabs.Teleport1:AddButton({Title = "TP1", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end})
+Tabs.Farm:AddButton({Title = "Auto Ride", Callback = function()
+while wait(1) do
+local args = {
+    [1] = game:GetService("Players").pipkut1.Character
+}
 
-Tabs.Teleport1:AddButton({Title = "TP2", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end})
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
 
-Tabs.Teleport1:AddButton({Title = "TP3", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end})
+local args = {
+    [1] = game:GetService("Players").pipkut2.Character
+}
 
-Tabs.Teleport1:AddButton({Title = "TP4", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end})
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
 
-Tabs.Teleport1:AddButton({Title = "TP5", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end})
+local args = {
+    [1] = game:GetService("Players").pipkut3.Character
+}
 
-Tabs.Teleport1:AddButton({Title = "TP6", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end})
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
 
-Tabs.Teleport1:AddButton({Title = "TP7", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end})
+local args = {
+    [1] = game:GetService("Players").pipkut4.Character
+}
 
-Tabs.Teleport1:AddButton({Title = "TP8", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end})
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
 
-Tabs.Teleport1:AddButton({Title = "TP9", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end})
+local args = {
+    [1] = game:GetService("Players").pipkut5.Character
+}
 
-Tabs.Teleport1:AddButton({Title = "TP10", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut6.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut7.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut8.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut9.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut10.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut11.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut12.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut13.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut14.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut15.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut16.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut17.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut18.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut19.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut20.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut21.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut22.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut23.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut24.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut25.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut26.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut27.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut28.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut29.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut30.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut31.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut32.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut33.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut34.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut35.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut36.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut37.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut38.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut39.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut40.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+end
 end})
 
 local Tabs = {
-    Teleport2 = Window:AddTab({ Title = "Teleport2", Icon = "" })
-}
-
-Tabs.Teleport2:AddButton({Title = "TP11", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end})
-
-Tabs.Teleport2:AddButton({Title = "TP12", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end})
-
-Tabs.Teleport2:AddButton({Title = "TP13", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end})
-
-Tabs.Teleport2:AddButton({Title = "TP14", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end})
-
-Tabs.Teleport2:AddButton({Title = "TP15", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end})
-
-Tabs.Teleport2:AddButton({Title = "TP16", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end})
-
-Tabs.Teleport2:AddButton({Title = "TP17", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end})
-
-Tabs.Teleport2:AddButton({Title = "TP18", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end})
-
-Tabs.Teleport2:AddButton({Title = "TP19", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end})
-
-Tabs.Teleport2:AddButton({Title = "TP20", Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end})
-
-local Tabs = {
-    Main = Window:AddTab({ Title = "Farm", Icon = "" }),
+    Main = Window:AddTab({ Title = "Main", Icon = "" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
