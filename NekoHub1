@@ -372,6 +372,41 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut36.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut37.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut38.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut39.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(1)
+
+local args = {
+    [1] = game:GetService("Players").pipkut40.Character
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
 end
 end})
 
