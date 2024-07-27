@@ -128,285 +128,286 @@ local Tabs = {
 }
 
 Tabs.Farm:AddButton({Title = "Auto Ride", Callback = function()
-while wait(1) do
+while wait() do
 local args = {
     [1] = game:GetService("Players").pipkut1.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut2.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut3.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut4.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut5.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut6.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut7.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut8.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut9.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut10.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut11.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut12.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut13.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut14.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut15.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut16.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut17.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut18.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut19.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut20.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut21.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut22.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut23.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut24.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut25.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut26.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut27.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut28.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut29.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut30.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut31.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut32.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut33.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut34.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut35.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut36.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut37.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut38.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut39.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
+wait(0.30)
 
 local args = {
     [1] = game:GetService("Players").pipkut40.Character
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
+wait(0.30)
 end
 end})
 
