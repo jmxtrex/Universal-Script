@@ -411,6 +411,14 @@ wait(0.30)
 end
 end})
 
+Tabs.Farm:AddButton({Title = "Teleport", Callback = function()
+local args = {
+    [1] = game:GetService("Players").pipkut1_v2
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("LocationAPI/TeleToPlayer"):InvokeServer(unpack(args))
+end})
+
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
