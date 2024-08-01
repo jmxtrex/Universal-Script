@@ -128,6 +128,14 @@ local Tabs = {
     Farm = Window:AddTab({ Title = "Farm", Icon = "" })
 }
 
+Tabs.Farm:AddButton({Title = "Teleport", Callback = function()
+local args = {
+    [1] = game:GetService("Players").pipkut1
+}
+
+game:GetService("ReplicatedStorage").API:FindFirstChild("LocationAPI/TeleToPlayer"):InvokeServer(unpack(args))
+end})
+
 Tabs.Farm:AddButton({Title = "Teleport1", Callback = function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4046, 4025, -12230)
 end})
