@@ -128,7 +128,6 @@ local Tabs = {
 }
 
 Tabs.Farm:AddButton({Title = "Auto Ride", Callback = function()
-while wait() do
 local args = {
     [1] = game:GetService("Players").pipkut1.Character
 }
@@ -337,8 +336,6 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("AdoptAPI/RideParent"):InvokeServer(unpack(args))
-wait(1)
-end
 end})
 
 Tabs.Farm:AddButton({Title = "Teleport1", Callback = function()
