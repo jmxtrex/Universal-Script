@@ -410,7 +410,7 @@ end})
 
 Tabs.Farm:AddButton({Title = "Teleport", Callback = function()
 local args = {
-    [1] = game:GetService("Players").pipkut1_v2
+    [1] = game:GetService("Players").baby_pipkut1
 }
 
 game:GetService("ReplicatedStorage").API:FindFirstChild("LocationAPI/TeleToPlayer"):InvokeServer(unpack(args))
