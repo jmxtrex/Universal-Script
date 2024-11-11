@@ -44,6 +44,34 @@ function thisCode()
                     end
                     num = num + 1
                 end
+    function Teleport()
+        while wait() do
+            pcall(function()
+                TPReturner()
+                if foundAnything ~= "" then
+                    TPReturner()
+                end
+            end)
+        end
+    end
+    local veryImportantWaitTime = 5
+    task.spawn(function()
+        while task.wait(veryImportantWaitTime) do
+            pcall(function()
+                for i,v in pairs(game.CoreGui:GetDescendants()) do
+                    pcall(function()
+                        if string.find(v.Name,"ErrorMessage") then
+                            if string.find(v.Text,"Security kick") then
+                                veryImportantWaitTime = 1e9
+                                Teleport()
+                            end
+                        end
+                    end)
+                end
+            end)
+        end
+    end)
+
     local AllowRunService = true
     local AllowRunServiceBind = Instance.new("BindableFunction")
     function AllowRunServiceBind.OnInvoke(args)
@@ -52,8 +80,29 @@ function thisCode()
         elseif args == "Disable" then
             AllowRunService = false
         end
+        local CoreGui = game:GetService("StarterGui")
+        CoreGui:SetCore("SendNotification", {
+            Title = "ChestFarm",
+            Text = "Enable/Disable ChestFarm",
+            Duration = math.huge,
+            Callback = AllowRunServiceBind,
+            Button1 = "Enable",
+            Button2 = "Disable",
+        })
+    end
+
+    local CoreGui = game:GetService("StarterGui")
+    CoreGui:SetCore("SendNotification", {
+        Title = "ChestFarm",
+        Text = "Disable/Enable ChestFarm",
+        Duration = math.huge,
+        Callback = AllowRunServiceBind,
+        Button1 = "Enable",
+        Button2 = "Disable",
+    })
+    
     task.spawn(function()
-        while wait(5) do
+        while true do
             if AllowRunService == true then
                 local hasChar = game.Players.LocalPlayer:FindFirstChild("Character")
                 if not game.Players.LocalPlayer.Character then
