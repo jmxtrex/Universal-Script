@@ -118,6 +118,7 @@ function thisCode()
     
     task.spawn(function()
         while true do
+              wait(5)
             if AllowRunService == true then
                 local hasChar = game.Players.LocalPlayer:FindFirstChild("Character")
                 if not game.Players.LocalPlayer.Character then
@@ -136,7 +137,6 @@ function thisCode()
                             Teleport()
                             break
                         end
-                      wait(5)
                     end 
                 end
             end
