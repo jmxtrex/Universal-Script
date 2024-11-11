@@ -58,24 +58,6 @@ function thisCode()
             end
         end
     end
-    
-    local veryImportantWaitTime = 0.5
-    task.spawn(function()
-        while task.wait(veryImportantWaitTime) do
-            pcall(function()
-                for i,v in pairs(game.CoreGui:GetDescendants()) do
-                    pcall(function()
-                        if string.find(v.Name,"ErrorMessage") then
-                            if string.find(v.Text,"Security kick") then
-                                veryImportantWaitTime = 1e9
-                                Teleport()
-                            end
-                        end
-                    end)
-                end
-            end)
-        end
-    end)
 
     local AllowRunService = true
     local AllowRunServiceBind = Instance.new("BindableFunction")
