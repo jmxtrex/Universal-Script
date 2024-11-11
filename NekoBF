@@ -45,20 +45,6 @@ function thisCode()
                     end
                     num = num + 1
                 end
-                if Possible == true then
-                    table.insert(AllIDs, ID)
-                    wait()
-                    pcall(function()
-                        writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
-                        wait()
-                        game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
-                    end)
-                    wait(4)
-                end
-            end
-        end
-    end
-
     local AllowRunService = true
     local AllowRunServiceBind = Instance.new("BindableFunction")
     function AllowRunServiceBind.OnInvoke(args)
