@@ -117,7 +117,7 @@ function thisCode()
     })
     
     task.spawn(function()
-        while while do
+        while true do
             if AllowRunService == true then
                 local hasChar = game.Players.LocalPlayer:FindFirstChild("Character")
                 if not game.Players.LocalPlayer.Character then
