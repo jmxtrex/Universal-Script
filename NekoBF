@@ -19,8 +19,3 @@ game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2Fer999")
 game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("MagicBUS")
 game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("KittGaming")
 game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2CaptainMaui")
-
-if game.PlaceId == 4442272183 then
-repeat wait() until game:IsLoaded()
-game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectro")
-end
