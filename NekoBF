@@ -8,8 +8,6 @@ while wait(60) do
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Geppo")
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Buso")
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Soru")
-end
-
 game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("SUB2GAMERROBOT_EXP1")
 game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2OfficialNoobie")
 game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Enyu_is_Pro")
@@ -19,3 +17,4 @@ game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2Fer999")
 game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("MagicBUS")
 game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("KittGaming")
 game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2CaptainMaui")
+end
