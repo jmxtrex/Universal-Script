@@ -18,5 +18,6 @@ if string.find(v.Name, "Fruit") then
 v.Parent = game:GetService("Workspace")
 end
 end
+end
 wait(1)
 end
