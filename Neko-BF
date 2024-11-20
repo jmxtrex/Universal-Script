@@ -1,1 +1,25 @@
+repeat wait() until game:IsLoaded()
+if game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main", 9e9):FindFirstChild("ChooseTeam") then
+    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam", "Pirates")
+    wait(3)
+end
+end
 
+while wait() do
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Cousin","Buy")
+wait(0.15)
+
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+if string.find(v.Name, "Fruit") then
+v.Parent = game.Players.LocalPlayer.Character
+end
+end
+wait(0.15)
+
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if string.find(v.Name, "Fruit") then
+v.Parent = game:GetService("Workspace")
+end
+end
+wait(1)
+end
