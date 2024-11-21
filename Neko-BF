@@ -1,14 +1,42 @@
 if game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main", 9e9):FindFirstChild("ChooseTeam") then
     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam", "Pirates")
     wait(3)
+
+local Part = Instance.new("Part")
+Part.Name = "P"
+Part.Size = Vector3.new(10,0,10)
+Part.Anchored = true
+Part.Transparency = 0.5
+Part.CFrame = CFrame.new(1120, 50, 1448)
+Part.Parent = Workspace
+
 local TweenService = game:GetService("TweenService")
 local Player = game.Players.LocalPlayer.Character.HumanoidRootPart
 
-local Info = TweenInfo.new(30, Enum.EasingStyle.Linear)
+local Info = TweenInfo.new(5, Enum.EasingStyle.Linear)
 
-local target = {CFrame = CFrame.new(1127, 16, 1337)}
+local target = {CFrame = CFrame.new(1120, 54, 1448)}
 
 local Tween = TweenService:Create(Player, Info, target)
 
 Tween:Play()
+
+while wait() do
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Cousin","Buy")
+wait(0.15)
+
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+if string.find(v.Name, "Fruit") then
+v.Parent = game.Players.LocalPlayer.Character
+end
+end
+wait(0.15)
+
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if string.find(v.Name, "Fruit") then
+v.Parent = game:GetService("Workspace")
+end
+end
+end
+wait(1)
 end
