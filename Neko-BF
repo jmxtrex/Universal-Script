@@ -9,6 +9,7 @@ Part.Anchored = true
 Part.Transparency = 0.5
 Part.CFrame = CFrame.new(1120, 50, 1448)
 Part.Parent = Workspace
+wait(0.15)
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1120, 54, 1448)
 
