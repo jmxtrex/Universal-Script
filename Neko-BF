@@ -10,16 +10,7 @@ Part.Transparency = 0.5
 Part.CFrame = CFrame.new(1120, 50, 1448)
 Part.Parent = Workspace
 
-local TweenService = game:GetService("TweenService")
-local Player = game.Players.LocalPlayer.Character.HumanoidRootPart
-
-local Info = TweenInfo.new(5, Enum.EasingStyle.Linear)
-
-local target = {CFrame = CFrame.new(1120, 54, 1448)}
-
-local Tween = TweenService:Create(Player, Info, target)
-
-Tween:Play()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1120, 54, 1448)
 
 wait(5)
 
