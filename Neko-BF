@@ -21,7 +21,7 @@ local Tween = TweenService:Create(Player, Info, target)
 
 Tween:Play()
 
-wait(1)
+wait(5)
 
 while wait() do
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Cousin","Buy")
