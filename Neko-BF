@@ -1,23 +1,5 @@
 if game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main", 9e9):FindFirstChild("ChooseTeam") then
     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam", "Pirates")
     wait(3)
-
-while wait() do
-game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Cousin","Buy")
-wait(0.15)
-
-for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-if string.find(v.Name, "Fruit") then
-v.Parent = game.Players.LocalPlayer.Character
-end
-end
-wait(0.15)
-
-for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-if string.find(v.Name, "Fruit") then
-v.Parent = game:GetService("Workspace")
-end
-end
-end
-wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1127.058837890625, 16.516639709472656, 1337.435546875)
 end
