@@ -1,6 +1,8 @@
 if game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main", 9e9):FindFirstChild("ChooseTeam") then
     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam", "Pirates")
     wait(3)
+end
+
 local TweenService = game:GetService("TweenService")
 local Player = game.Players.LocalPlayer.Character.HumanoidRootPart
 
@@ -11,4 +13,3 @@ local target = {CFrame = CFrame.new(1127, 16, 1337)}
 local Tween = TweenService:Create(Player, Info, target)
 
 Tween:Play()
-end
