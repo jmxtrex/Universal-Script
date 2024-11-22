@@ -13,7 +13,7 @@ wait(0.15)
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1120, 54, 1448)
 
-wait(1)
+wait(0.30)
 
 while wait() do
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Cousin","Buy")
