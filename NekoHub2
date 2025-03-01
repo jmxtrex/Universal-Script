@@ -92,13 +92,6 @@ UserInputService.WindowFocused:Connect(function()
     end
 end)
 
-for i, v in pairs(getupvalue(require(ReplicatedStorage.Fsys).load("RouterClient").init, 4)) do
-    v.Name = i
-end
-pcall(function()
-    ReplicatedStorage.API:FindFirstChild("DailyLoginAPI/ClaimDailyReward"):InvokeServer()
-end)
-
 UserInputService.WindowFocusReleased:Connect(function()
     if Render then
         RunService:Set3dRenderingEnabled(false)
