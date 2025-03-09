@@ -119,6 +119,12 @@ end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "z" then
+game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("LocationAPI/TeleToPlayer"):InvokeServer(game:GetService("Players").baby_pipkut1)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "y" then
 game:GetService("CoreGui").gcnuBC.y7Sgmm.Rayfield.Main.Visible = false
 wait(5)
