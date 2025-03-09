@@ -1,0 +1,134 @@
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "a" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12115.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "c" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12110.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "d" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12105.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "f" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12100.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "g" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12095.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "h" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12090.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "j" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12085.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "k" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12080.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "l" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12075.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "m" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12070.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "n" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12065.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "p" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12060.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "q" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12055.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "r" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12050.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "s" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12045.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "t" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12040.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "u" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12035.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "v" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12030.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "w" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12025.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "x" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12020.3)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "0" then
+local args = {
+    [1] = game:GetService("Players"):WaitForChild("pipkut1")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("LocationAPI/TeleToPlayer"):InvokeServer(unpack(args))
+end
+end)
+loadstring(game:HttpGet('https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua'))()
+wait(60)
+game:GetService("CoreGui").ArrayField:destroy()
+game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("FamilyAPI/CreateFamily"):InvokeServer()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c29af06acdb7a80fb239415fd322efe9.lua"))()
