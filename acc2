@@ -125,14 +125,6 @@ end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
-if key == "y" then
-game:GetService("CoreGui").gcnuBC.y7Sgmm.Rayfield.Main.Visible = false
-wait(5)
-game:GetService("CoreGui").gcnuBC.y7Sgmm.Rayfield.Main.Visible = true
-end
-end)
-
-game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "0" then
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("LocationAPI/TeleToPlayer"):InvokeServer(game:GetService("Players").pipkut1)
 end
