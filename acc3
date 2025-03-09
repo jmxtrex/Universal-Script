@@ -1,0 +1,23 @@
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "z" then
+game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("LocationAPI/TeleToPlayer"):InvokeServer(game:GetService("Players").baby_pipkut1)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "y" then
+game:GetService("CoreGui").gcnuBC.y7Sgmm.Rayfield.Main.Visible = false
+wait(5)
+game:GetService("CoreGui").gcnuBC.y7Sgmm.Rayfield.Main.Visible = true
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "0" then
+game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("LocationAPI/TeleToPlayer"):InvokeServer(game:GetService("Players").pipkut1)
+end
+end)
+loadstring(game:HttpGet('https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua'))()
+wait(60)
+game:GetService("CoreGui").ArrayField:destroy()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c29af06acdb7a80fb239415fd322efe9.lua"))()
