@@ -167,6 +167,12 @@ end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "y" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 0, 0)
+end
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "0" then
 local args = {
     [1] = game:GetService("Players"):WaitForChild("pipkut1")
