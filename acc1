@@ -181,7 +181,7 @@ local args = {
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("LocationAPI/TeleToPlayer"):InvokeServer(unpack(args))
 end
 end)
-wait(200)
+wait(220)
 loadstring(game:HttpGet('https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua'))()
 wait(60)
 game:GetService("CoreGui").ArrayField:destroy()
