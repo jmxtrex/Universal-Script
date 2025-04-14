@@ -183,7 +183,7 @@ end
 end)
 wait(220)
 loadstring(game:HttpGet('https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua'))()
-wait(60)
+wait(30)
 game:GetService("CoreGui").ArrayField:destroy()
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("FamilyAPI/CreateFamily"):InvokeServer()
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c29af06acdb7a80fb239415fd322efe9.lua"))()
