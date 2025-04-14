@@ -129,6 +129,7 @@ if key == "0" then
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("LocationAPI/TeleToPlayer"):InvokeServer(game:GetService("Players").pipkut1)
 end
 end)
+wait(120)
 loadstring(game:HttpGet('https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua'))()
 wait(60)
 game:GetService("CoreGui").ArrayField:destroy()
