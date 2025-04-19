@@ -1,120 +1,120 @@
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "a" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12015.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -9015.3)
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "c" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12010.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -9010.3)
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "d" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12005.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -9005.3)
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "f" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -12000.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8000.3)
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "g" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -11995.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8995.3)
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "h" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -11990.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8990.3)
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "j" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -11985.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8985.3)
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "k" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -11980.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8980.3)
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "l" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -11975.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8975.3)
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "m" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -11970.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8970.3)
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "n" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -11965.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8965.3)
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "p" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -11960.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8960.3)
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "q" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -11955.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8955.3)
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "r" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -11950.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8950.3)
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "s" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -11945.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8945.3)
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "t" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -11940.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8940.3)
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "u" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -11935.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8935.3)
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "v" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -11930.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8930.3)
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "w" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -11925.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8925.3)
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "x" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3978.5, 4020, -11920.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8920.3)
 end
 end)
 
