@@ -1,120 +1,220 @@
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "a" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -9015.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -9015.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "c" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -9010.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -9010.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "d" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -9005.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -9005.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "f" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8000.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -9000.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "g" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8995.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -8995.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "h" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8990.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -8990.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "j" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8985.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -8985.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "k" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8980.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -8980.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "l" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8975.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -8975.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "m" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8970.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -8970.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "n" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8965.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -8965.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "p" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8960.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -8960.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "q" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8955.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -8955.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "r" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8950.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -8950.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "s" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8945.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -8945.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "t" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8940.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -8940.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "u" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8935.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -8935.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "v" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8930.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -8930.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "w" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8925.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -8925.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "x" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2978.5, 4020, -8920.3)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2.5)
+local teleport = {CFrame = CFrame.new(-2978.5, 4020, -8920.3)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
