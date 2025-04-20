@@ -129,7 +129,20 @@ if key == "0" then
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("LocationAPI/TeleToPlayer"):InvokeServer(game:GetService("Players").pipkut1)
 end
 end)
-wait(200)
+
+local black = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+
+black.Name = "black"
+black.Parent = game:GetService("CoreGui")
+
+Frame.Parent = black
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0.60, 0, 0, -58)
+Frame.Size = UDim2.new(0, 300, 0, 200)
+
+wait(220)
 loadstring(game:HttpGet('https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua'))()
 wait(30)
 game:GetService("CoreGui").ArrayField:destroy()
