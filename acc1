@@ -269,7 +269,7 @@ end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "y" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, -50, 0)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, -999, 0)
 end
 end)
 
