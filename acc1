@@ -296,7 +296,7 @@ Frame.Position = UDim2.new(0.60, 0, 0, -58)
 Frame.Size = UDim2.new(0, 300, 0, 200)
 
 wait(220)
-loadstring(game:HttpGet('https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/jmxtrex/Universal-Script/refs/heads/main/RE'))()
 wait(30)
 game:GetService("CoreGui").ArrayField:destroy()
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("FamilyAPI/CreateFamily"):InvokeServer()
