@@ -269,7 +269,12 @@ end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 if key == "y" then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, -999, 0)
+local TweenService = game:GetService("TweenService")
+local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+local tweenInfo = TweenInfo.new(2)
+local teleport = {CFrame = CFrame.new(0, -1111, 0)}
+local Tween = TweenService:Create(player, tweenInfo, teleport)
+Tween:Play()
 end
 end)
 
