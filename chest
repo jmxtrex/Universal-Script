@@ -10,6 +10,8 @@ Frame.BorderColor3 = Color3.fromRGB(0, 255, 0)
 Frame.Position = UDim2.new(0.60, 0, 0, -58)
 Frame.Size = UDim2.new(0, 300, 0, 200)
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Trustmenotcondom/QTONYX/refs/heads/main/QuantumOnyx.lua"))()
+
 while true do
 if game:GetService("Players")["LocalPlayer"].Data.Beli.Value >= 13000000 then
 local End = Instance.new("ScreenGui")
@@ -26,5 +28,3 @@ Frame.Size = UDim2.new(0, 700, 0, 200)
 end
 wait(60)
 end
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Trustmenotcondom/QTONYX/refs/heads/main/QuantumOnyx.lua"))()
