@@ -10,6 +10,8 @@ Frame.BorderColor3 = Color3.fromRGB(0, 255, 0)
 Frame.Position = UDim2.new(0.60, 0, 0, -58)
 Frame.Size = UDim2.new(0, 300, 0, 200)
 
+workspace.Map.Dressrosa.Tavern:destroy()
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Trustmenotcondom/QTONYX/refs/heads/main/QuantumOnyx.lua"))()
 
 while true do
