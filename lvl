@@ -11,12 +11,10 @@ Frame.Position = UDim2.new(0.60, 0, 0, -58)
 Frame.Size = UDim2.new(0, 300, 0, 200)
 
 if game.PlaceId == 2753915549 then
-repeat wait() until game:IsLoaded()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TlDinhKhoi/Xeter/refs/heads/main/Main.lua"))()
 end
 
 if game.PlaceId == 4442272183 then
-repeat wait() until game:IsLoaded()
 local End = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 
