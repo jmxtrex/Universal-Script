@@ -11,7 +11,7 @@ Frame.Position = UDim2.new(0.60, 0, 0, -58)
 Frame.Size = UDim2.new(0, 300, 0, 200)
 
 if game.PlaceId == 2753915549 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TlDinhKhoi/Xeter/refs/heads/main/Main.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/DatThg/refs/heads/main/DatThgV2"))()
 wait(60)
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Geppo")
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Buso")
