@@ -54,26 +54,7 @@ end
 while true do
 if game.PlaceId == 2753915549 then
 if game:GetService("Players")["LocalPlayer"].Data.Level.Value >= 700 then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5638, 580, 4450)
-local Players = game:GetService("Players")
-local character = Players.LocalPlayer.Character
-if character then
-for _, part in ipairs(character:GetDescendants()) do
-if part:IsA("BasePart") then
-part.Anchored = true
-end
-end
-end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/h6hbii/AnDepZaiHub/refs/heads/main/AndepzaiHub.lua"))()
-local Players = game:GetService("Players")
-local character = Players.LocalPlayer.Character
-if character then
-for _, part in ipairs(character:GetDescendants()) do
-if part:IsA("BasePart") then
-part.Anchored = false
-end
-end
-end
 break
 end
 if game:GetService("Players")["LocalPlayer"].Data.Points.Value ~= 0 then
