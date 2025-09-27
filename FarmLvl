@@ -47,7 +47,7 @@ end
 
 while true do
 if game:GetService("Players")["LocalPlayer"].Data.Level.Value >= 700 then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0,100,0)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5638, 580, 4450)
 local Players = game:GetService("Players")
 local character = Players.LocalPlayer.Character
 if character then
