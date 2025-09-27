@@ -15,19 +15,7 @@ if game:GetService("Players")["LocalPlayer"].Data.Level.Value < 700 then
 _G.Team = "Pirates" -- Pirates/Marines
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
 wait(60)
-game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Geppo")
-game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Buso")
-game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Soru")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("SUB2GAMERROBOT_EXP1")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2OfficialNoobie")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Enyu_is_Pro")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("JCWK")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("StarcodeHEO")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2Fer999")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("MagicBUS")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("KittGaming")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2CaptainMaui")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("KITT_RESET")
+
 end
 end
 
@@ -73,6 +61,10 @@ end
 if game:GetService("Players")["LocalPlayer"].Data.Points.Value ~= 0 then
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint","Melee",_G.PointStats)
 end
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Geppo")
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Buso")
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Soru")
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDeathStep")
 end
 wait(1)
 end
