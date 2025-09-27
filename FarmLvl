@@ -11,7 +11,9 @@ Frame.Position = UDim2.new(0.60, 0, 0, -58)
 Frame.Size = UDim2.new(0, 300, 0, 200)
 
 if game.PlaceId == 2753915549 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/DatThg/refs/heads/main/DatThgV2"))()
+if game:GetService("Players")["LocalPlayer"].Data.Level.Value < 700 then
+_G.Team = "Pirates" -- Pirates/Marines
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
 wait(60)
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Geppo")
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Buso")
@@ -26,6 +28,7 @@ game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("MagicBUS")
 game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("KittGaming")
 game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2CaptainMaui")
 game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("KITT_RESET")
+end
 end
 
 if game.PlaceId == 4442272183 then
@@ -43,6 +46,29 @@ Frame.Size = UDim2.new(0, 700, 0, 200)
 end
 
 while true do
+if game:GetService("Players")["LocalPlayer"].Data.Level.Value >= 700 then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0,100,0)
+local Players = game:GetService("Players")
+local character = Players.LocalPlayer.Character
+if character then
+for _, part in ipairs(character:GetDescendants()) do
+if part:IsA("BasePart") then
+part.Anchored = true
+end
+end
+end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/h6hbii/AnDepZaiHub/refs/heads/main/AndepzaiHub.lua"))()
+local Players = game:GetService("Players")
+local character = Players.LocalPlayer.Character
+if character then
+for _, part in ipairs(character:GetDescendants()) do
+if part:IsA("BasePart") then
+part.Anchored = false
+end
+end
+end
+break
+end
 if game:GetService("Players")["LocalPlayer"].Data.Points.Value ~= 0 then
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint","Melee",_G.PointStats)
 end
