@@ -81,7 +81,7 @@ if game:GetService("Players")["LocalPlayer"].Data.Points.Value ~= 0 then
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint","Melee",_G.PointStats)
 end
 end
-wait (1)
+wait(1)
 end
 end)()
 
@@ -91,6 +91,6 @@ game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Gepp
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Buso")
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Soru")
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDeathStep")
-wait (60)
+wait(60)
 end
 end)()
