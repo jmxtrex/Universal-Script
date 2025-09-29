@@ -55,7 +55,7 @@ coroutine.wrap(function()
 while true do
 if game.PlaceId == 2753915549 then
 local MyLevel = game:GetService("Players").LocalPlayer.Data.Level.Value
-if MyLevel >= 700
+if MyLevel >= 700 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/h6hbii/AnDepZaiHub/refs/heads/main/AndepzaiHub.lua"))()
 break
 end
