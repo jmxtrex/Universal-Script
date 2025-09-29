@@ -86,9 +86,9 @@ end)()
 coroutine.wrap(function()
 while true do
 if game:GetService("Players")["LocalPlayer"].Data.Points.Value ~= 0 then
-game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint","Melee",_G.PointStats)
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint","Melee",20)
 end
-wait(1)
+wait(10)
 end
 end)()
 
