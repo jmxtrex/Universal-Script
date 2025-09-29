@@ -7,8 +7,8 @@ Check.Parent = game:GetService("CoreGui")
 Frame.Parent = Check
 Frame.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 Frame.BorderColor3 = Color3.fromRGB(0, 255, 0)
-Frame.Position = UDim2.new(0.60, 0, 0, -58)
-Frame.Size = UDim2.new(0, 300, 0, 200)
+Frame.Position = UDim2.new(0.92, 0, 0, -58)
+Frame.Size = UDim2.new(0, 50, 0, 50)
 
 if game.PlaceId == 2753915549 then
 if game:GetService("Players")["LocalPlayer"].Data.Level.Value < 700 then
