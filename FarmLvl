@@ -52,10 +52,9 @@ Frame.Size = UDim2.new(0, 50, 0, 50)
 end
 
 coroutine.wrap(function()
-while true do
+while wait() do
 if game.PlaceId == 2753915549 then
-local MyLevel = game:GetService("Players").LocalPlayer.Data.Level.Value
-if MyLevel >= 700 then
+if game:GetService("Players")["LocalPlayer"].Data.Level.Value >= 700 then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5638, 580, 4450)
 local Players = game:GetService("Players")
 local character = Players.LocalPlayer.Character
