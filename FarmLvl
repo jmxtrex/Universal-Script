@@ -82,20 +82,31 @@ end
 end)()
 
 coroutine.wrap(function()
-while true do
+while wait(10) do
 if game:GetService("Players")["LocalPlayer"].Data.Points.Value ~= 0 then
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint","Melee",20)
 end
-wait(10)
 end
 end)()
 
 coroutine.wrap(function()
-while true do
+while wait(60) do
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Geppo")
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Buso")
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Soru")
+if game.Players.LocalPlayer.Backpack:FindFirstChild("Combat") or game.Players.LocalPlayer.Character:FindFirstChild("Combat") and game:GetService("Players")["LocalPlayer"].Data.Beli.Value >= 150000 then
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyBlackLeg")
-wait(60)
+coroutine.wrap(function()
+while wait(1) do
+if game.Players.LocalPlayer.Backpack:FindFirstChild("Black Leg") then
+game.Players.LocalPlayer.Backpack:FindFirstChild("Black Leg").Parent = game.Players.LocalPlayer.Character
+end
+if game:GetService("Players")["LocalPlayer"].Data.Level.Value >= 700 then
+break
+end
+end
+end)()
+break
+end
 end
 end)()
