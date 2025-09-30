@@ -48,6 +48,25 @@ game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("SUB2GAMERROBOT
 end
 if game:GetService("Players")["LocalPlayer"].Data.Level.Value >= 700 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/h6hbii/AnDepZaiHub/refs/heads/main/AndepzaiHub.lua"))()
+getgenv().speed = 200
+
+local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
+ 
+local LocalPlayer = Players.LocalPlayer
+local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+
+function tweenTeleport(to, speed)
+    local rootPart = Character.HumanoidRootPart
+    local tween = TweenService:Create(rootPart, TweenInfo.new((to.Position - rootPart.Position).Magnitude / speed, Enum.EasingStyle.Linear), {
+        CFrame = to
+    })
+ 
+    tween:Play()
+    tween.Completed:Wait()
+end
+
+tweenTeleport(CFrame.new(1322, 43, -1339), getgenv().speed)
 end
 end
 
