@@ -25,65 +25,6 @@ Frame.Size = UDim2.new(0, 50, 0, 50)
 if game:GetService("Players")["LocalPlayer"].Data.Level.Value < 700 then
 _G.Team = "Pirates" -- Pirates/Marines
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
-wait(60)
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2Fer999")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Enyu_is_Pro")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("JCWK")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("StarcodeHEO")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("MagicBUS")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("KittGaming")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2CaptainMaui")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2OfficialNoobie")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("TheGreatAce")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2NoobMaster123")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2Daigrock")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Axiore")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("StrawHatMaine")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("TantaiGaming")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Bluxxy")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("SUB2GAMERROBOT_EXP1")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("KITT_RESET")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2UncleKizaru")
-game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("SUB2GAMERROBOT_RESET1")
-end
-if game:GetService("Players")["LocalPlayer"].Data.Level.Value >= 700 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/h6hbii/AnDepZaiHub/refs/heads/main/AndepzaiHub.lua"))()
-getgenv().speed = 200
-
-local Players = game:GetService("Players")
-local TweenService = game:GetService("TweenService")
- 
-local LocalPlayer = Players.LocalPlayer
-local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
-
-function tweenTeleport(to, speed)
-    local rootPart = Character.HumanoidRootPart
-    local tween = TweenService:Create(rootPart, TweenInfo.new((to.Position - rootPart.Position).Magnitude / speed, Enum.EasingStyle.Linear), {
-        CFrame = to
-    })
- 
-    tween:Play()
-    tween.Completed:Wait()
-end
-
-tweenTeleport(CFrame.new(1322, 43, -1339), getgenv().speed)
-end
-end
-
-if game.PlaceId == 4442272183 then
-local End = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-
-End.Name = "End"
-End.Parent = game:GetService("CoreGui")
-
-Frame.Parent = End
-Frame.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
-Frame.BorderColor3 = Color3.fromRGB(0, 255, 0)
-Frame.Position = UDim2.new(0, 0, 0, -58)
-Frame.Size = UDim2.new(0, 50, 0, 50)
-end
-
 coroutine.wrap(function()
 while wait(1) do
 if game.PlaceId == 2753915549 then
@@ -149,3 +90,55 @@ break
 end
 end
 end)()
+game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2Fer999")
+game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Enyu_is_Pro")
+game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("JCWK")
+game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("StarcodeHEO")
+game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("MagicBUS")
+game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("KittGaming")
+game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2CaptainMaui")
+game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2OfficialNoobie")
+game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("TheGreatAce")
+game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2NoobMaster123")
+game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2Daigrock")
+game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Axiore")
+game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("StrawHatMaine")
+game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("TantaiGaming")
+game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Bluxxy")
+game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("SUB2GAMERROBOT_EXP1")
+game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("KITT_RESET")
+game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2UncleKizaru")
+game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("SUB2GAMERROBOT_RESET1")
+end
+if game:GetService("Players")["LocalPlayer"].Data.Level.Value >= 700 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/h6hbii/AnDepZaiHub/refs/heads/main/AndepzaiHub.lua"))()
+getgenv().speed = 200
+local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
+local LocalPlayer = Players.LocalPlayer
+local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+function tweenTeleport(to, speed)
+local rootPart = Character.HumanoidRootPart
+local tween = TweenService:Create(rootPart, TweenInfo.new((to.Position - rootPart.Position).Magnitude / speed, Enum.EasingStyle.Linear), {
+CFrame = to
+})
+tween:Play()
+tween.Completed:Wait()
+end
+tweenTeleport(CFrame.new(1322, 43, -1339), getgenv().speed)
+end
+end
+
+if game.PlaceId == 4442272183 then
+local End = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+
+End.Name = "End"
+End.Parent = game:GetService("CoreGui")
+
+Frame.Parent = End
+Frame.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+Frame.BorderColor3 = Color3.fromRGB(0, 255, 0)
+Frame.Position = UDim2.new(0, 0, 0, -58)
+Frame.Size = UDim2.new(0, 50, 0, 50)
+end
