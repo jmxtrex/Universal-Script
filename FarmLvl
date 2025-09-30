@@ -1,9 +1,7 @@
 local Check = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
-
 Check.Name = "Check"
 Check.Parent = game:GetService("CoreGui")
-
 Frame.Parent = Check
 Frame.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 Frame.BorderColor3 = Color3.fromRGB(0, 255, 0)
@@ -13,10 +11,8 @@ Frame.Size = UDim2.new(0, 50, 0, 50)
 if game.PlaceId == 2753915549 then
 local FirstSea = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
-
 FirstSea.Name = "FirstSea"
 FirstSea.Parent = game:GetService("CoreGui")
-
 Frame.Parent = FirstSea
 Frame.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 Frame.BorderColor3 = Color3.fromRGB(0, 255, 0)
@@ -132,10 +128,8 @@ end
 if game.PlaceId == 4442272183 then
 local End = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
-
 End.Name = "End"
 End.Parent = game:GetService("CoreGui")
-
 Frame.Parent = End
 Frame.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 Frame.BorderColor3 = Color3.fromRGB(0, 255, 0)
