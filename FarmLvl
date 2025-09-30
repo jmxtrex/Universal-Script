@@ -59,9 +59,9 @@ if game:GetService("Players")["LocalPlayer"].Data.Points.Value ~= 0 then
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint","Melee",20)
 end
 end
-if MyLevel == 300 or MyLevel <= 349 then
+if MyLevel == 250 or MyLevel <= 349 then
 if game:GetService("Players")["LocalPlayer"].Data.Points.Value ~= 0 then
-game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint","Defense",100)
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint","Defense",20)
 end
 end
 if MyLevel == 350 or MyLevel <= 700 then
