@@ -116,6 +116,16 @@ end)()
 
 coroutine.wrap(function()
 while wait(10) do
+MyLevel = game:GetService("Players").LocalPlayer.Data.Level.Value
+if MyLevel == 0 or MyLevel <= 249 then
+if game:GetService("Players")["LocalPlayer"].Data.Points.Value ~= 0 then
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint","Melee",20)
+end
+if MyLevel == 300 or MyLevel <= 349 then
+if game:GetService("Players")["LocalPlayer"].Data.Points.Value ~= 0 then
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint","Defense",100)
+end
+if MyLevel == 350 or MyLevel <= 700 then
 if game:GetService("Players")["LocalPlayer"].Data.Points.Value ~= 0 then
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint","Melee",20)
 end
