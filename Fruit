@@ -15,7 +15,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1120, 54
 
 wait(0.30)
 
-while wait() do
+while wait(1) do
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Cousin","Buy")
 wait(0.15)
 
@@ -32,5 +32,4 @@ v.Parent = game:GetService("Workspace")
 end
 end
 end
-wait(1)
 end
