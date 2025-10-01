@@ -118,6 +118,7 @@ end
 end
 if game:GetService("Players")["LocalPlayer"].Data.Level.Value >= 700 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/h6hbii/AnDepZaiHub/refs/heads/main/AndepzaiHub.lua"))()
+wait(10)
 getgenv().speed = 200
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
