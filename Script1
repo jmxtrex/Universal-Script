@@ -1,8 +1,8 @@
-local Check = Instance.new("ScreenGui")
+local Check1 = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
-Check.Name = "Check"
-Check.Parent = game:GetService("CoreGui")
-Frame.Parent = Check
+Check1.Name = "Check1"
+Check1.Parent = game:GetService("CoreGui")
+Frame.Parent = Check1
 Frame.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 Frame.BorderColor3 = Color3.fromRGB(0, 255, 0)
 Frame.Position = UDim2.new(0.92, 0, 0, -58)
