@@ -77,7 +77,6 @@ game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("KITT_RESET")
 game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2UncleKizaru")
 game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("SUB2GAMERROBOT_RESET1")
 end
-end
 if game:GetService("Players")["LocalPlayer"].Data.Level.Value >= 700 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/h6hbii/AnDepZaiHub/refs/heads/main/AndepzaiHub.lua"))()
 wait(10)
