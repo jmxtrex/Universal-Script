@@ -79,7 +79,7 @@ game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2UncleKizar
 game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("SUB2GAMERROBOT_RESET1")
 end
 if game:GetService("Players")["LocalPlayer"].Data.Level.Value >= 700 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/h6hbii/AnDepZaiHub/refs/heads/main/AndepzaiHub.lua"))()
+
 wait(10)
 getgenv().speed = 200
 local Players = game:GetService("Players")
