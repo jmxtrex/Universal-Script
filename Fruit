@@ -1,19 +1,28 @@
-if game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main", 9e9):FindFirstChild("ChooseTeam") then
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam", "Pirates")
-    wait(3)
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam", "Pirates")
+wait(10)
 
-local Part = Instance.new("Part")
-Part.Name = "P"
-Part.Size = Vector3.new(10,0,10)
-Part.Anchored = true
-Part.Transparency = 0.5
-Part.CFrame = CFrame.new(1120, 50, 1448)
-Part.Parent = Workspace
-wait(0.15)
+if not game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:FindFirstChild("BodyClip") then
+local Noclip = Instance.new("BodyVelocity")
+Noclip.Name = "BodyClip"
+Noclip.Parent = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+Noclip.MaxForce = Vector3.new(100000,100000,100000)
+Noclip.Velocity = Vector3.new(0,0,0)
+end
 
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1120, 54, 1448)
-
-wait(0.30)
+getgenv().speed = 200
+local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
+local LocalPlayer = Players.LocalPlayer
+local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+function tweenTeleport(to, speed)
+local rootPart = Character.HumanoidRootPart
+local tween = TweenService:Create(rootPart, TweenInfo.new((to.Position - rootPart.Position).Magnitude / speed, Enum.EasingStyle.Linear), {
+CFrame = to
+})
+tween:Play()
+tween.Completed:Wait()
+end
+tweenTeleport(CFrame.new(-175, 180, -257), getgenv().speed)
 
 while wait(1) do
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Cousin","Buy")
@@ -29,7 +38,6 @@ wait(0.15)
 for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
 if string.find(v.Name, "Fruit") then
 v.Parent = game:GetService("Workspace")
-end
 end
 end
 end
