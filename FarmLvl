@@ -20,6 +20,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/jmxtrex/Universal-Scr
 break
 end
 end
+end
 end)()
 
 coroutine.wrap(function()
