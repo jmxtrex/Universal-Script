@@ -79,22 +79,71 @@ game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("Sub2UncleKizar
 game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer("SUB2GAMERROBOT_RESET1")
 end
 if game:GetService("Players")["LocalPlayer"].Data.Level.Value >= 700 then
-
-wait(10)
-getgenv().speed = 200
-local Players = game:GetService("Players")
-local TweenService = game:GetService("TweenService")
-local LocalPlayer = Players.LocalPlayer
-local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
-function tweenTeleport(to, speed)
-local rootPart = Character.HumanoidRootPart
-local tween = TweenService:Create(rootPart, TweenInfo.new((to.Position - rootPart.Position).Magnitude / speed, Enum.EasingStyle.Linear), {
-CFrame = to
-})
+function topos(Pos)
+Distance = (Pos.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+if game.Players.LocalPlayer.Character.Humanoid.Sit == true then game.Players.LocalPlayer.Character.Humanoid.Sit = false end
+pcall(function() tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(Distance/210, Enum.EasingStyle.Linear),{CFrame = Pos}) end)
 tween:Play()
-tween.Completed:Wait()
+if Distance <= 250 then
+tween:Cancel()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Pos
 end
-tweenTeleport(CFrame.new(1322, 43, -1339), getgenv().speed)
+end
+
+function EquipWeapon(ToolSe)
+if game.Players.LocalPlayer.Backpack:FindFirstChild(ToolSe) then
+Tool = game.Players.LocalPlayer.Backpack:FindFirstChild(ToolSe)
+wait(.1)
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(Tool)
+end
+end
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/DatThg/refs/heads/main/DatThgV2"))()
+wait(10)
+coroutine.wrap(function()
+while wait(1) do
+if not game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:FindFirstChild("BodyClip") then
+local Noclip = Instance.new("BodyVelocity")
+Noclip.Name = "BodyClip"
+Noclip.Parent = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+Noclip.MaxForce = Vector3.new(100000,100000,100000)
+Noclip.Velocity = Vector3.new(0,0,0)
+end
+end
+end)()
+wait(1)
+spawn(function()
+while wait() do
+pcall(function()
+if game:GetService("Workspace").Map.Ice.Door.CanCollide == true and game:GetService("Workspace").Map.Ice.Door.Transparency == 0 then
+repeat topos(CFrame.new(4849.29883, 5.65138149, 719.611877)) wait() until (Vector3.new(4849.29883, 5.65138149, 719.611877)-game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 3
+wait(1.1)
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("DressrosaQuestProgress","Detective")
+wait(1)
+EquipWeapon("Key")
+repeat topos(CFrame.new(1347.7124, 37.3751602, -1325.6488)) wait() until (Vector3.new(1347.7124, 37.3751602, -1325.6488)-game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 3
+wait(0.5)
+end
+if game:GetService("Workspace").Map.Ice.Door.CanCollide == false and game:GetService("Workspace").Map.Ice.Door.Transparency == 1 then
+repeat topos(CFrame.new(1347.7124, 37.3751602, -1325.6488)) wait() until (Vector3.new(1347.7124, 37.3751602, -1325.6488)-game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 3
+end
+if game:GetService("Workspace").Enemies:FindFirstChild("Ice Admiral") then
+for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+if v.Name == "Ice Admiral" then
+if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+repeat task.wait()
+EquipWeapon("Black Leg")
+topos(v.HumanoidRootPart.CFrame * CFrame.new(5,10,7))
+until v.Humanoid.Health <= 0
+end
+else
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelDressrosa")
+end
+end
+end
+end)
+end
+end)
 end
 end
 
