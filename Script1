@@ -8,4 +8,4 @@ Frame.BorderColor3 = Color3.fromRGB(0, 255, 0)
 Frame.Position = UDim2.new(0.92, 0, 0, -58)
 Frame.Size = UDim2.new(0, 50, 0, 50)
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/h6hbii/AnDepZaiHub/refs/heads/main/AndepzaiHub.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
