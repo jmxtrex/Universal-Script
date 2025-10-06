@@ -16,7 +16,51 @@ coroutine.wrap(function()
 while wait(1) do
 if game.PlaceId == 2753915549 then
 if game:GetService("Players")["LocalPlayer"].Data.Level.Value >= 700 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/jmxtrex/Universal-Script/refs/heads/main/VipServer"))()
+_G.AutoFarm = false
+coroutine.wrap(function()
+while wait(1) do
+if not game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:FindFirstChild("BodyClip") then
+local Noclip = Instance.new("BodyVelocity")
+Noclip.Name = "BodyClip"
+Noclip.Parent = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+Noclip.MaxForce = Vector3.new(100000,100000,100000)
+Noclip.Velocity = Vector3.new(0,0,0)
+end
+end
+end)()
+wait(1)
+spawn(function()
+while wait() do
+pcall(function()
+if game:GetService("Workspace").Map.Ice.Door.CanCollide == true and game:GetService("Workspace").Map.Ice.Door.Transparency == 0 then
+repeat topos(CFrame.new(4849.29883, 5.65138149, 719.611877)) wait() until (Vector3.new(4849.29883, 5.65138149, 719.611877)-game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 3
+wait(1.1)
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("DressrosaQuestProgress","Detective")
+wait(1)
+EquipWeapon("Key")
+repeat topos(CFrame.new(1347.7124, 37.3751602, -1325.6488)) wait() until (Vector3.new(1347.7124, 37.3751602, -1325.6488)-game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 3
+wait(0.5)
+end
+if game:GetService("Workspace").Map.Ice.Door.CanCollide == false and game:GetService("Workspace").Map.Ice.Door.Transparency == 1 then
+repeat topos(CFrame.new(1347.7124, 37.3751602, -1325.6488)) wait() until (Vector3.new(1347.7124, 37.3751602, -1325.6488)-game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 3
+end
+if game:GetService("Workspace").Enemies:FindFirstChild("Ice Admiral") then
+for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+if v.Name == "Ice Admiral" then
+if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+repeat task.wait()
+EquipWeapon("Black Leg")
+topos(v.HumanoidRootPart.CFrame * CFrame.new(5,10,7))
+until v.Humanoid.Health <= 0
+end
+else
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelDressrosa")
+end
+end
+end
+end)
+end
+end)
 break
 end
 end
