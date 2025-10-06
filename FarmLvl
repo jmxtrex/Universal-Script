@@ -28,7 +28,6 @@ Noclip.Velocity = Vector3.new(0,0,0)
 end
 end
 end)()
-wait(1)
 spawn(function()
 while wait() do
 pcall(function()
