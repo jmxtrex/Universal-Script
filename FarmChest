@@ -1,14 +1,22 @@
+local BlackScreen = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+BlackScreen.Name = "BlackScreen"
+BlackScreen.Parent = game:GetService("CoreGui")
+Frame.Parent = BlackScreen
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0, 0, 0, -58)
+Frame.Size = UDim2.new(100, 0, 100, 0)
+
 local Check = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
-
 Check.Name = "Check"
 Check.Parent = game:GetService("CoreGui")
-
 Frame.Parent = Check
 Frame.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 Frame.BorderColor3 = Color3.fromRGB(0, 255, 0)
-Frame.Position = UDim2.new(0.60, 0, 0, -58)
-Frame.Size = UDim2.new(0, 300, 0, 200)
+Frame.Position = UDim2.new(0.92, 0, 0, -58)
+Frame.Size = UDim2.new(0, 50, 0, 50)
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
 
@@ -16,14 +24,12 @@ while wait(1) do
 if game:GetService("Players")["LocalPlayer"].Data.Beli.Value >= 13000000 then
 local End = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
-
 End.Name = "End"
 End.Parent = game:GetService("CoreGui")
-
 Frame.Parent = End
 Frame.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 Frame.BorderColor3 = Color3.fromRGB(0, 255, 0)
-Frame.Position = UDim2.new(0, 0, 0, 380)
-Frame.Size = UDim2.new(0, 700, 0, 200)
+Frame.Position = UDim2.new(0, 0, 0, -58)
+Frame.Size = UDim2.new(0, 50, 0, 50)
 end
 end
