@@ -24,7 +24,6 @@ _G.Team = "Pirates"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
 coroutine.wrap(function()
 while wait(1) do
-if game.PlaceId == 2753915549 then
 if game:GetService("Players")["LocalPlayer"].Data.Level.Value >= 700 then
 _G.AutoFarm = false
 coroutine.wrap(function()
@@ -71,7 +70,6 @@ end)
 end
 end)
 break
-end
 end
 end
 end)()
