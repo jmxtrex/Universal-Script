@@ -24,46 +24,54 @@ local Player7 = game:GetService("Players"):FindFirstChild("pipkut7")
 local Player8 = game:GetService("Players"):FindFirstChild("pipkut8")
 local Player9 = game:GetService("Players"):FindFirstChild("pipkut9")
 
-while wait(120) do
+while wait(40) do
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/SubscribeToHouse"):FireServer(Player1)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player1, "f-1", "UseBlock", 50, LocalPlayer)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player1, "f-1", "UseBlock", 50, LocalPlayer)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player1, "f-1", "UseBlock", 50, LocalPlayer)
+wait(10)
 
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/SubscribeToHouse"):FireServer(Player2)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player2, "f-1", "UseBlock", 50, LocalPlayer)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player2, "f-1", "UseBlock", 50, LocalPlayer)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player2, "f-1", "UseBlock", 50, LocalPlayer)
+wait(10)
 
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/SubscribeToHouse"):FireServer(Player3)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player3, "f-1", "UseBlock", 50, LocalPlayer)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player3, "f-1", "UseBlock", 50, LocalPlayer)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player3, "f-1", "UseBlock", 50, LocalPlayer)
+wait(10)
 
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/SubscribeToHouse"):FireServer(Player4)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player4, "f-1", "UseBlock", 50, LocalPlayer)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player4, "f-1", "UseBlock", 50, LocalPlayer)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player4, "f-1", "UseBlock", 50, LocalPlayer)
+wait(10)
 
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/SubscribeToHouse"):FireServer(Player5)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player5, "f-1", "UseBlock", 50, LocalPlayer)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player5, "f-1", "UseBlock", 50, LocalPlayer)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player5, "f-1", "UseBlock", 50, LocalPlayer)
+wait(10)
 
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/SubscribeToHouse"):FireServer(Player6)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player6, "f-1", "UseBlock", 50, LocalPlayer)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player6, "f-1", "UseBlock", 50, LocalPlayer)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player6, "f-1", "UseBlock", 50, LocalPlayer)
+wait(10)
 
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/SubscribeToHouse"):FireServer(Player7)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player7, "f-1", "UseBlock", 50, LocalPlayer)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player7, "f-1", "UseBlock", 50, LocalPlayer)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player7, "f-1", "UseBlock", 50, LocalPlayer)
+wait(10)
 
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/SubscribeToHouse"):FireServer(Player8)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player8, "f-1", "UseBlock", 50, LocalPlayer)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player8, "f-1", "UseBlock", 50, LocalPlayer)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player8, "f-1", "UseBlock", 50, LocalPlayer)
+wait(10)
 
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/SubscribeToHouse"):FireServer(Player9)
 game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("HousingAPI/ActivateFurniture"):InvokeServer(Player9, "f-1", "UseBlock", 50, LocalPlayer)
