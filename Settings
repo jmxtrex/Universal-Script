@@ -1,0 +1,10 @@
+echo "A" | unzip /sdcard/Download/Settings.zip -d /sdcard
+echo "A" | unzip /sdcard/Download/Accountslog.zip -d /sdcard
+cp /sdcard/Accountslog/account.txt /sdcard/Download
+cp /sdcard/Accountslog/cookie.txt /sdcard/Download
+cp /sdcard/Accountslog/server-link.txt /sdcard/Download
+cp -r /sdcard/Settings/Delta /sdcard
+su -c "cp /sdcard/Settings/com.roblox.clienv_preferences.xml /data/user/0/com.roblox.clienv/shared_prefs"
+su -c "cp /sdcard/Settings/com.roblox.clienw_preferences.xml /data/user/0/com.roblox.clienw/shared_prefs"
+su -c "cp /sdcard/Settings/com.roblox.clienx_preferences.xml /data/user/0/com.roblox.clienx/shared_prefs"
+su -c "cp /sdcard/Settings/com.roblox.clieny_preferences.xml /data/user/0/com.roblox.clieny/shared_prefs"
