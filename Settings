@@ -8,3 +8,4 @@ su -c "cp /sdcard/Settings/com.roblox.clienv_preferences.xml /data/user/0/com.ro
 su -c "cp /sdcard/Settings/com.roblox.clienw_preferences.xml /data/user/0/com.roblox.clienw/shared_prefs"
 su -c "cp /sdcard/Settings/com.roblox.clienx_preferences.xml /data/user/0/com.roblox.clienx/shared_prefs"
 su -c "cp /sdcard/Settings/com.roblox.clieny_preferences.xml /data/user/0/com.roblox.clieny/shared_prefs"
+curl -Ls https://raw.githubusercontent.com/jmxtrex/Universal-Script/refs/heads/main/rokidsetup.sh | bash
