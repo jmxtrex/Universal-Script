@@ -2,7 +2,7 @@ echo "A" | unzip /sdcard/Download/KPOBEP.zip -d /sdcard
 cp /sdcard/KPOBEP/Accountslog/account.txt /sdcard/Download
 cp /sdcard/KPOBEP/Accountslog/cookie.txt /sdcard/Download
 cp /sdcard/KPOBEP/Accountslog/server-link.txt /sdcard/Download
-cp -r /sdcard/KPOBEP/Codex /sdcard
+cp -r /sdcard/KPOBEP/Delta /sdcard
 su -c "cp /sdcard/KPOBEP/Settings/com.roblox.clienv_preferences.xml /data/user/0/com.roblox.clienv/shared_prefs"
 su -c "cp /sdcard/KPOBEP/Settings/com.roblox.clienw_preferences.xml /data/user/0/com.roblox.clienw/shared_prefs"
 su -c "cp /sdcard/KPOBEP/Settings/com.roblox.clienx_preferences.xml /data/user/0/com.roblox.clienx/shared_prefs"
